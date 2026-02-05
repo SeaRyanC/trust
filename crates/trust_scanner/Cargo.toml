@@ -1,0 +1,12 @@
+[package]
+name = "trust_scanner"
+version.workspace = true
+edition.workspace = true
+description = "TypeScript lexer/scanner for the Trust compiler"
+
+[dependencies]
+trust_common.workspace = true
+unicode-xid.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]

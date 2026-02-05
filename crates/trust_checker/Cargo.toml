@@ -1,0 +1,13 @@
+[package]
+name = "trust_checker"
+version.workspace = true
+edition.workspace = true
+description = "TypeScript type checker for the Trust compiler"
+
+[dependencies]
+trust_common.workspace = true
+trust_parser.workspace = true
+trust_binder.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]

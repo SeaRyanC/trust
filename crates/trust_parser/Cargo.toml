@@ -1,0 +1,12 @@
+[package]
+name = "trust_parser"
+version.workspace = true
+edition.workspace = true
+description = "TypeScript parser for the Trust compiler"
+
+[dependencies]
+trust_common.workspace = true
+trust_scanner.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
