@@ -1,0 +1,14 @@
+[package]
+name = "trust_emitter"
+version.workspace = true
+edition.workspace = true
+description = "JavaScript code emitter for the Trust compiler"
+
+[dependencies]
+trust_common.workspace = true
+trust_parser.workspace = true
+trust_binder.workspace = true
+trust_checker.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]

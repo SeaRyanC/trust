@@ -1,0 +1,48 @@
+[workspace]
+members = [
+    "crates/trust_common",
+    "crates/trust_scanner",
+    "crates/trust_parser",
+    "crates/trust_binder",
+    "crates/trust_checker",
+    "crates/trust_emitter",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SeaRyanC/trust"
+
+[workspace.dependencies]
+# Internal crates
+trust_common = { path = "crates/trust_common" }
+trust_scanner = { path = "crates/trust_scanner" }
+trust_parser = { path = "crates/trust_parser" }
+trust_binder = { path = "crates/trust_binder" }
+trust_checker = { path = "crates/trust_checker" }
+trust_emitter = { path = "crates/trust_emitter" }
+
+# External dependencies
+unicode-xid = "0.2"
+thiserror = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[package]
+name = "trust"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+trust_common.workspace = true
+trust_scanner.workspace = true
+trust_parser.workspace = true
+trust_binder.workspace = true
+trust_checker.workspace = true
+trust_emitter.workspace = true
+
+[[bin]]
+name = "trustc"
+path = "src/main.rs"

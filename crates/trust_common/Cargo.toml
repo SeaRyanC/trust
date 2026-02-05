@@ -1,0 +1,9 @@
+[package]
+name = "trust_common"
+version.workspace = true
+edition.workspace = true
+description = "Common types and utilities for the Trust TypeScript compiler"
+
+[dependencies]
+thiserror.workspace = true
+serde.workspace = true
